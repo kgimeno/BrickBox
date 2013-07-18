@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Add set";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+@using (Html.BeginForm())
+{
+    @Html.Label("Name of set:")
+    @Html.TextBox("setName")<br />
+    @Html.Label("ID number of set:")
+    @Html.TextBox("setNumber")<br />
+    @Html.Label("Number of pieces included in set:")
+    @Html.TextBox("pieceCount")<br />
+    @Html.Label("MSRP:")
+    @Html.TextBox("msrp")<br /><br />
+    
+    <button type="submit">Add set to inventory</button>
+}
