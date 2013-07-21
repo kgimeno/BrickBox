@@ -23,8 +23,8 @@
                             <li>@Html.ActionLink("Home", "Index", "Home")</li>
                             @*<li>@Html.ActionLink("About", "About", "Home")</li>*@
                             <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                            <li>@Html.ActionLink("View Lego sets", "ViewSets", "Home")</li>
-                            <li>@Html.ActionLink("Add Lego set", "Add", "Home")</li>
+                            <li>@Html.ActionLink("View Lego sets", "ViewSets", "LegoSet")</li>
+                            <li>@Html.ActionLink("Add Lego set", "AddSet", "LegoSet")</li>
                             
                         </ul>
                     </nav>
@@ -42,6 +42,14 @@
                 <div class="float-left">
                     <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
                 </div>
+                
+                <div class="float-right">
+                    <p>
+                        @Html.Label("Site Counter")
+                        @HttpContext.Current.Application["SiteCounter"]
+                    </p>
+                </div>
+
             </div>
         </footer>
 

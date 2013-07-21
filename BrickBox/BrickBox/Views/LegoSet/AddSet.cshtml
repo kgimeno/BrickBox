@@ -1,0 +1,82 @@
+﻿@model BrickBox.Models.Domain.LegoSet
+
+@{
+    ViewBag.Title = "Add set";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+@using (Html.BeginForm())
+{
+    @Html.Label("Name of set:")
+    @Html.TextBox("setNameTextBox")<br />
+    @Html.Label("ID number of set:")
+    @Html.TextBox("setNumberTextBox")<br />
+    @Html.Label("Number of pieces included in set:")
+    @Html.TextBox("pieceCountTextBox")<br />
+    @Html.Label("MSRP:")
+    @Html.TextBox("msrpTextBox")<br /><br />
+    
+    <button type="submit">Add set to inventory</button>
+}
+
+
+@*@{
+    ViewBag.Title = "Add set";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>LegoSet</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.setName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.setName)
+            @Html.ValidationMessageFor(model => model.setName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.setNumber)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.setNumber)
+            @Html.ValidationMessageFor(model => model.setNumber)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.pieceCount)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.pieceCount)
+            @Html.ValidationMessageFor(model => model.pieceCount)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.msrp)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.msrp)
+            @Html.ValidationMessageFor(model => model.msrp)
+        </div>
+
+    </fieldset>
+    
+    <p>
+        <input type="submit" value="Add set to inventory" />
+    </p>
+    
+    <div>
+        @Html.ActionLink("ViewSets", "LegoSet")
+    </div>
+}*@

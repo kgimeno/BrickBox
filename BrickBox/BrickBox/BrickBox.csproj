@@ -181,13 +181,22 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LegoSetController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Business\LegoSetMgr.cs" />
+    <Compile Include="Models\Business\Manager.cs" />
+    <Compile Include="Models\Domain\LegoSet.cs" />
+    <Compile Include="Models\Services\Factory.cs" />
+    <Compile Include="Models\Services\ILegoSetSvc.cs" />
+    <Compile Include="Models\Services\IService.cs" />
+    <Compile Include="Models\Services\LegoSetSvcImpl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -301,11 +310,14 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Home\Add.cshtml" />
-    <Content Include="Views\Home\ViewSets.cshtml" />
-    <Content Include="Views\Home\Remove.cshtml" />
+    <Content Include="Views\LegoSet\ViewSets.cshtml" />
+    <Content Include="Views\LegoSet\AddSet.cshtml" />
+    <Content Include="Views\LegoSet\RemoveSet.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Code\Business\" />
+    <Folder Include="App_Code\Domain\" />
+    <Folder Include="App_Code\Services\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
