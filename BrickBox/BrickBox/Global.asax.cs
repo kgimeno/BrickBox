@@ -14,8 +14,13 @@ namespace BrickBox
 
     public class MvcApplication : System.Web.HttpApplication
     {
-        protected void Application_Start()
+        //protected void Application_Start()
+        protected void Application_Start(object sender, EventArgs e)
         {
+            Application.Lock();
+            Application["SiteCounter"] = 0;
+            Application.UnLock();
+
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
@@ -23,6 +28,13 @@ namespace BrickBox
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+        }
+
+        protected void Session_Start(object sender, EventArgs e)
+        {
+            Application.Lock();
+            Application["SiteCounter"] = ((int)Application["SiteCounter"]) + 1;
+            Application.UnLock();
         }
     }
 }

@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrickBox", "BrickBox\BrickBox.csproj", "{38478024-C4AB-4AEF-8C2D-5241D4FDDA7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrickBox", "BrickBox\BrickBox.csproj", "{FF90AD25-E745-4BC1-852A-22BB516212F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrickBoxTest", "BrickBoxTest\BrickBoxTest.csproj", "{6A1AF92B-ED2E-4A30-9233-A6CB8060D362}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{38478024-C4AB-4AEF-8C2D-5241D4FDDA7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{38478024-C4AB-4AEF-8C2D-5241D4FDDA7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{38478024-C4AB-4AEF-8C2D-5241D4FDDA7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{38478024-C4AB-4AEF-8C2D-5241D4FDDA7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF90AD25-E745-4BC1-852A-22BB516212F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF90AD25-E745-4BC1-852A-22BB516212F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF90AD25-E745-4BC1-852A-22BB516212F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF90AD25-E745-4BC1-852A-22BB516212F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A1AF92B-ED2E-4A30-9233-A6CB8060D362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A1AF92B-ED2E-4A30-9233-A6CB8060D362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A1AF92B-ED2E-4A30-9233-A6CB8060D362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A1AF92B-ED2E-4A30-9233-A6CB8060D362}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

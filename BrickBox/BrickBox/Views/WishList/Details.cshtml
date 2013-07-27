@@ -1,0 +1,43 @@
+﻿@model BrickBox.Models.Domain.WishList
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>WishList</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.model)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.model)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.pieces)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.pieces)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.msrp)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.msrp)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.wishlistID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

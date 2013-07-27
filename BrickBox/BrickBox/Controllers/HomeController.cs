@@ -10,7 +10,7 @@ namespace BrickBox.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "To keep track of your collected Lego sets.";
+            ViewBag.Message = "A program to track your Lego collection.";
 
             return View();
         }
@@ -24,28 +24,7 @@ namespace BrickBox.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Contact information.";
-
-            return View();
-        }
-
-        public ActionResult Add()
-        {
-            ViewBag.Message = "Add new sets to inventory.";
-
-            return View();
-        }
-
-        public ActionResult ViewSets()
-        {
-            ViewBag.Message = "View Lego sets saved in your inventory.";
-
-            return View();
-        }
-
-        public ActionResult Remove()
-        {
-            ViewBag.Message = "Are you sure you want to remove this Lego set from your inventory?";
+            ViewBag.Message = "Your contact page.";
 
             return View();
         }
