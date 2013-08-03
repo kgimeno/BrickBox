@@ -15,7 +15,7 @@ namespace BrickBox.Controllers
 
         //
         // GET: /Inventory/
-        [Authorize]
+//        [Authorize]
         public ActionResult Index()
         {
             return View(db.Inventories.ToList());
@@ -36,6 +36,7 @@ namespace BrickBox.Controllers
 
         //
         // GET: /Inventory/Create
+
         public ActionResult Create()
         {
             return View();
