@@ -17,7 +17,7 @@ namespace BrickBoxTest.Business
         public void TestWishListMgrGet()
         {
             // Arrange - variable for database
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
             WishList set = new WishList();
             WishListMgr wishlistMgr = new WishListMgr();
 
@@ -50,7 +50,7 @@ namespace BrickBoxTest.Business
         public void TestWishListMgrAdd()
         {
             // Arrange - variables for testing the manager
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
             WishList set = new WishList();
             WishListMgr wishlistMgr = new WishListMgr();
 
@@ -79,7 +79,7 @@ namespace BrickBoxTest.Business
         public void TestWishListMgrEdit()
         {
             // Arrange - variables for testing the manager
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
             WishList set = new WishList();
             WishListMgr wishlistMgr = new WishListMgr();
 
@@ -114,7 +114,7 @@ namespace BrickBoxTest.Business
         public void TestWishListMgrDelete()
         {
             // Arrange - variables for testing the manager
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
             WishList set = new WishList();
             WishListMgr wishlistMgr = new WishListMgr();
 

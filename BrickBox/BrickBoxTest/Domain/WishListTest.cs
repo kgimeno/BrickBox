@@ -24,7 +24,7 @@ namespace BrickBoxTest.Domain
         public void TestWishListForRecords()
         {
             // Arrange - variable for database
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
 
             // Act - get the set in the first position
             WishList savedSet = (from d in db.Wishlists where d.wishlistID == 1 select d).Single();
@@ -42,7 +42,7 @@ namespace BrickBoxTest.Domain
         {
             // Arrange - add a set details to the database
             WishList set = new WishList();
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
 
             set.name = "Seaside House";
             set.model = "7346";
@@ -73,7 +73,7 @@ namespace BrickBoxTest.Domain
             /// Arrange - add set to the database to ensure that there is a set
             // to be edited from the database
             WishList set = new WishList();
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
 
             set.name = "Apple Tree House";
             set.model = "5891";
@@ -106,7 +106,7 @@ namespace BrickBoxTest.Domain
             // Arrange - add set to the database to ensure that there is a set
             // to be deleted from the database
             WishList set = new WishList();
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
 
             set.name = "Propeller Adventures";
             set.model = "7292";

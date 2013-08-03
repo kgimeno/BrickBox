@@ -24,7 +24,7 @@ namespace BrickBoxTest.Business
         public void TestInventoryMgrGet()
         {
             // Arrange - variable for database
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
             Inventory set = new Inventory();
             InventoryMgr inventoryMgr = new InventoryMgr();
 
@@ -57,7 +57,7 @@ namespace BrickBoxTest.Business
         public void TestInventoryMgrAdd()
         {
             // Arrange - variables for testing the manager
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
             Inventory set = new Inventory();
             InventoryMgr inventoryMgr = new InventoryMgr();
 
@@ -86,7 +86,7 @@ namespace BrickBoxTest.Business
         public void TestInventoryMgrEdit()
         {
             // Arrange - variables for testing the manager
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
             Inventory set = new Inventory();
             InventoryMgr inventoryMgr = new InventoryMgr();
 
@@ -121,7 +121,7 @@ namespace BrickBoxTest.Business
         public void TestInventoryMgrDelete()
         {
             // Arrange - variables for testing the manager
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
             Inventory set = new Inventory();
             InventoryMgr inventoryMgr = new InventoryMgr();
 

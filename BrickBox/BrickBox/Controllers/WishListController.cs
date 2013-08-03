@@ -11,7 +11,7 @@ namespace BrickBox.Controllers
 {
     public class WishListController : Controller
     {
-        private BrickBoxContext db = new BrickBoxContext();
+        private Default db = new Default();
 
         //
         // GET: /WishList/

@@ -6,7 +6,7 @@ using System.Web;
 
 namespace BrickBox.Models.Domain
 {
-    public class BrickBoxContext : DbContext
+    public class Default : DbContext
     {
         public DbSet<Inventory> Inventories { get; set; }
         public DbSet<WishList> Wishlists { get; set; }

@@ -24,7 +24,7 @@ namespace BrickBoxTest.Domain
         public void TestInventoryForRecords()
         {
             // Arrange - variable for database
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
 
             // Act - get the set in the first position
             Inventory savedSet = (from d in db.Inventories where d.inventoryID == 1 select d).Single();
@@ -42,7 +42,7 @@ namespace BrickBoxTest.Domain
         {
             // Arrange - add a set details to the database
             Inventory set = new Inventory();
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
 
             set.name = "City Fire Station";
             set.model = "7208";
@@ -72,7 +72,7 @@ namespace BrickBoxTest.Domain
             // Arrange - add set to the database to ensure that there is a set
             // to be edited from the database
             Inventory set = new Inventory();
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
 
             set.name = "Propeller Adventures";
             set.model = "7292";
@@ -105,7 +105,7 @@ namespace BrickBoxTest.Domain
             // Arrange - add set to the database to ensure that there is a set
             // to be deleted from the database
             Inventory set = new Inventory();
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
 
             set.name = "Propeller Adventures";
             set.model = "7292";

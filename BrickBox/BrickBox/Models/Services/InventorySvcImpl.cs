@@ -8,7 +8,7 @@ namespace BrickBox.Models.Services
 {
     public class InventorySvcImpl : IInventorySvc 
     {
-        public IQueryable<Inventory> getSet(Inventory set, BrickBoxContext db)
+        public IQueryable<Inventory> getSet(Inventory set, Default db)
         {
             try
             {
@@ -23,7 +23,7 @@ namespace BrickBox.Models.Services
             }
         }
 
-        public void addSet(Inventory set, BrickBoxContext db)
+        public void addSet(Inventory set, Default db)
         {
             try
             {
@@ -38,7 +38,7 @@ namespace BrickBox.Models.Services
             }
         }
 
-        public void editSet(Inventory set, BrickBoxContext db)
+        public void editSet(Inventory set, Default db)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace BrickBox.Models.Services
             }
         }
 
-        public void deleteSet(Inventory set, BrickBoxContext db)
+        public void deleteSet(Inventory set, Default db)
         {
             try
             {

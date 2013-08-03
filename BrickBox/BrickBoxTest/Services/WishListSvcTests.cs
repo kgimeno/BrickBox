@@ -24,7 +24,7 @@ namespace BrickBoxTest.Services
         public void TestWishListSvcGet()
         {
             // Arrange - variable for database
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
             Factory factory = new Factory();
             WishList set = new WishList();
             IWishListSvc WishListSvc;
@@ -59,7 +59,7 @@ namespace BrickBoxTest.Services
         public void TestWishListSvcAdd()
         {
             // Arrange - variables for testing the services
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
             Factory factory = new Factory();
             WishList set = new WishList();
             IWishListSvc WishListSvc;
@@ -90,7 +90,7 @@ namespace BrickBoxTest.Services
         public void TestWishListSvcEdit()
         {
             // Arrange - variables for testing the services
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
             WishList set = new WishList();
 
             Factory factory = new Factory();
@@ -128,7 +128,7 @@ namespace BrickBoxTest.Services
         public void TestWishListSvcDelete()
         {
             // Arrange - variables for testing the services
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
             Factory factory = new Factory();
             WishList set = new WishList();
             IWishListSvc WishListSvc;

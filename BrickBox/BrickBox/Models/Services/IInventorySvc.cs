@@ -9,9 +9,9 @@ namespace BrickBox.Models.Services
 {
     public interface IInventorySvc : IService
     {
-        IQueryable<Inventory> getSet(Inventory set, BrickBoxContext db);
-        void addSet(Inventory set, BrickBoxContext db);
-        void editSet(Inventory set, BrickBoxContext db);
-        void deleteSet(Inventory set, BrickBoxContext db);
+        IQueryable<Inventory> getSet(Inventory set, Default db);
+        void addSet(Inventory set, Default db);
+        void editSet(Inventory set, Default db);
+        void deleteSet(Inventory set, Default db);
     }
 }

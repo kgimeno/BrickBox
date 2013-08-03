@@ -24,7 +24,7 @@ namespace BrickBoxTest.Services
         public void TestInventorySvcGet()
         {
             // Arrange - variable for database
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
             Factory factory = new Factory();
             Inventory set = new Inventory();
             IInventorySvc inventorySvc;
@@ -59,7 +59,7 @@ namespace BrickBoxTest.Services
         public void TestInventorySvcAdd()
         {
             // Arrange - variables for testing the services
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
             Factory factory = new Factory();
             Inventory set = new Inventory();
             IInventorySvc inventorySvc;
@@ -90,7 +90,7 @@ namespace BrickBoxTest.Services
         public void TestInventorySvcEdit()
         {
             // Arrange - variables for testing the services
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
             Inventory set = new Inventory();
 
             Factory factory = new Factory();
@@ -128,7 +128,7 @@ namespace BrickBoxTest.Services
         public void TestInventorySvcDelete()
         {
             // Arrange - variables for testing the services
-            BrickBoxContext db = new BrickBoxContext();
+            Default db = new Default();
             Factory factory = new Factory();
             Inventory set = new Inventory();
             IInventorySvc inventorySvc;

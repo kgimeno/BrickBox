@@ -9,7 +9,7 @@ namespace BrickBox.Models.Business
 {
     public class InventoryMgr : Manager
     {
-        public void getSet(Inventory set, BrickBoxContext db)
+        public void getSet(Inventory set, Default db)
         {
             try
             {
@@ -24,7 +24,7 @@ namespace BrickBox.Models.Business
             }
         }
 
-        public void addSet(Inventory set, BrickBoxContext db)
+        public void addSet(Inventory set, Default db)
         {
             try
             {
@@ -39,7 +39,7 @@ namespace BrickBox.Models.Business
             }
         }
 
-        public void editSet(Inventory set, BrickBoxContext db)
+        public void editSet(Inventory set, Default db)
         {
             try
             {
@@ -54,7 +54,7 @@ namespace BrickBox.Models.Business
             }
         }
 
-        public void deleteSet(Inventory set, BrickBoxContext db)
+        public void deleteSet(Inventory set, Default db)
         {
             try
             {

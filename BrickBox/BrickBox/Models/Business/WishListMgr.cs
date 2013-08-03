@@ -9,7 +9,7 @@ namespace BrickBox.Models.Business
 {
     public class WishListMgr : Manager
     {
-        public void getSet(WishList set, BrickBoxContext db)
+        public void getSet(WishList set, Default db)
         {
             try
             {
@@ -24,7 +24,7 @@ namespace BrickBox.Models.Business
             }
         }
 
-        public void addSet(WishList set, BrickBoxContext db)
+        public void addSet(WishList set, Default db)
         {
             try
             {
@@ -39,7 +39,7 @@ namespace BrickBox.Models.Business
             }
         }
 
-        public void editSet(WishList set, BrickBoxContext db)
+        public void editSet(WishList set, Default db)
         {
             try
             {
@@ -54,7 +54,7 @@ namespace BrickBox.Models.Business
             }
         }
 
-        public void deleteSet(WishList set, BrickBoxContext db)
+        public void deleteSet(WishList set, Default db)
         {
             try
             {

@@ -8,7 +8,7 @@ namespace BrickBox.Models.Services
 {
     public class WishListSvcImpl : IWishListSvc
     {
-        public IQueryable<WishList> getSet(WishList set, BrickBoxContext db)
+        public IQueryable<WishList> getSet(WishList set, Default db)
         {
             try
             {
@@ -23,7 +23,7 @@ namespace BrickBox.Models.Services
             }
         }
 
-        public void addSet(WishList set, BrickBoxContext db)
+        public void addSet(WishList set, Default db)
         {
             try
             {
@@ -38,7 +38,7 @@ namespace BrickBox.Models.Services
             }
         }
 
-        public void editSet(WishList set, BrickBoxContext db)
+        public void editSet(WishList set, Default db)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace BrickBox.Models.Services
             }
         }
 
-        public void deleteSet(WishList set, BrickBoxContext db)
+        public void deleteSet(WishList set, Default db)
         {
             try
             {
