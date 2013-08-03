@@ -12,7 +12,12 @@
         <header>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("Brick Box", "Index", "Home")</p>
+                    @*<p class="site-title">@Html.ActionLink("Brick Box", "Index", "Home")</p>*@
+                    <p class="site-title">
+                        @*<a href="@Url.Action("Index", "Home")"><img src="/Images/BrickBoxLogo.PNG" width="60" /></a>*@
+                       @* @Html.ActionLink("Brick Box", "Index", "Home", null, new { @class = "site-title"})*@
+                        <a href="@Url.Action("Index", "Home")"><img src="/Images/BrickBoxLogo1.PNG" height="60" width="400" /></a>
+                    </p>
                 </div>
                 <div class="float-right">
                     <section id="login">

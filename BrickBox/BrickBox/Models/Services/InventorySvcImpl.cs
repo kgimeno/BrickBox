@@ -16,7 +16,7 @@ namespace BrickBox.Models.Services
                 var query = db.Inventories;
                 return query;
             }
-            catch (Exception e)
+            catch (InvalidLegoSetException e)
             {
                 Console.WriteLine("Exception occured: {0}", e);
                 throw e;
@@ -31,7 +31,7 @@ namespace BrickBox.Models.Services
                 db.Inventories.Add(set);
                 db.SaveChanges();
             }
-            catch (Exception e)
+            catch (InvalidLegoSetException e)
             {
                 Console.WriteLine("Exception occured: {0}", e);
                 throw e;
@@ -45,7 +45,7 @@ namespace BrickBox.Models.Services
                 Console.WriteLine("Entering method BrickBox.Models.Services::editSet");
                 db.SaveChanges();
             }
-            catch (Exception e)
+            catch (InvalidLegoSetException e)
             {
                 Console.WriteLine("Exception occured: {0}", e);
                 throw e;
@@ -60,7 +60,7 @@ namespace BrickBox.Models.Services
                 db.Entry(set).State = System.Data.EntityState.Deleted;
                 db.SaveChanges();
             }
-            catch (Exception e)
+            catch (InvalidLegoSetException e)
             {
                 Console.WriteLine("Exception occured: {0}", e);
                 throw e;
