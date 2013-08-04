@@ -15,7 +15,7 @@ namespace BrickBox.Controllers
 
         //
         // GET: /Inventory/
-//        [Authorize]
+        [Authorize]
         public ActionResult Index()
         {
             return View(db.Inventories.ToList());

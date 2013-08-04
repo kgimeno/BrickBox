@@ -15,7 +15,7 @@ namespace BrickBox.Controllers
 
         //
         // GET: /WishList/
-//        [Authorize]
+        [Authorize]
         public ActionResult Index()
         {
             return View(db.Wishlists.ToList());
