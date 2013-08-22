@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * BrickBoxTest.Business
+ * WishListMgrTests to test the business layer methods
+ * @author Kelly J Gimeno
+ * @version 1
+ * @date 07/26/2013
+ */
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BrickBox.Models.Domain;
 using BrickBox.Models.Business;

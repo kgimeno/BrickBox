@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*****************************************************************************
+ * BrickBox.Models.Services.InvalidLegoSetException
+ * InvalidLegoSetException customer exception class used if there is an 
+ *   invalid lego set 
+ * @author Kelly J Gimeno
+ * @version 1
+ * @date 08/22/2013
+ *****************************************************************************/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;

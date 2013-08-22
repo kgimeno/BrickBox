@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*****************************************************************************
+ * BrickBox.Models.Business.Manager
+ * Manager class used as a SuperType class to promote decoupling from the 
+ *   factory while still "getting services"
+ * @author Kelly J Gimeno
+ * @version 1
+ * @date 08/22/2013
+ *****************************************************************************/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,10 +23,5 @@ namespace BrickBox.Models.Business
         {
             return factory.GetService(name, args);
         }
-
-        //protected IService GetService(string name) // protected access because it is not to be used outside inheritance
-        //{
-        //    return factory.GetService(name);
-        //}
     }
 }

@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*****************************************************************************
+ * BrickBox.Models.Business.WishListMgr
+ * WishListMgr to manage the work flow of the services related to WishList
+ * @author Kelly J Gimeno
+ * @version 1
+ * @date 08/22/2013
+ *****************************************************************************/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;

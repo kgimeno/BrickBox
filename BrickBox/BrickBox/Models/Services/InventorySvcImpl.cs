@@ -1,4 +1,15 @@
-﻿using System;
+﻿/*****************************************************************************
+ * BrickBox.Models.Services.InventorySvcImpl
+ * InventorySvcImpl implements inventory services
+ *   - getSet will retrieve a Lego set from the inventory database table
+ *   - addSet will add a new Lego set to the inventory database table
+ *   - editSet will edit an existing set from the inventory database table
+ *   - deleteSet will delete an existing set from the inventory database table
+ * @author Kelly J Gimeno
+ * @version 1
+ * @date 08/22/2013
+ *****************************************************************************/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;

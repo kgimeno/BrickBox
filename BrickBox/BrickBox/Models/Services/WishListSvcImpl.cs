@@ -1,4 +1,15 @@
-﻿using System;
+﻿/*****************************************************************************
+ * BrickBox.Models.Services.WishListSvcImpl
+ * WishListSvcImpl implements wish list services
+ *   - getSet will retrieve a Lego set from the wish list database table
+ *   - addSet will add a new Lego set to the wish list database table 
+ *   - editSet will edit an existing set from the wish list database table
+ *   - deleteSet will delete an existing set from the wish list database table
+ * @author Kelly J Gimeno
+ * @version 1
+ * @date 08/22/2013
+ *****************************************************************************/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;

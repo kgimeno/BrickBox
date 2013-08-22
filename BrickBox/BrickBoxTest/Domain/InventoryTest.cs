@@ -40,7 +40,7 @@ namespace BrickBoxTest.Domain
         [TestMethod]
         public void TestAddSetToInventory()
         {
-            // Arrange - add a set details to the database
+            // Arrange - add set details to the database
             Inventory set = new Inventory();
             Default db = new Default();
 

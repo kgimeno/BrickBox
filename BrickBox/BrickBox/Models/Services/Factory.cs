@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*****************************************************************************
+ * BrickBox.Models.Services.Factory
+ * Factory manages the creation of other objects and instantiates service 
+ *   implementations
+ * @author Kelly J Gimeno
+ * @version 1
+ * @date 08/22/2013
+ *****************************************************************************/
+using System;
 using System.Configuration;         // Added for using the configuration file
 using System.Collections.Specialized;
 using System.Reflection;
